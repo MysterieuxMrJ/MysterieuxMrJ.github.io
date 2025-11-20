@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jules VUILLAUME Portfolio</title>
+		<meta name="description" content="Jules VUILLAUME, etudiant en BTS SIO à Strasbourg. Découvrez mon profil, mes compétences et mes expériences."/>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="google-site-verification" content="Uwczq83GJIu_uFbsIM4nqlqHwkOQ8wXCqtbe4LiVYA8" />
+		<link id="maincss" rel="stylesheet" href="assets/css/style.css"/>
+		<link id="themecss" rel="stylesheet" href="assets/css/style-light.css"/>
+		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Open+Sans'/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/v4-shims.min.css"/>
+	</head>
+	<body>
+		<!-- HEADER -->		
+		<div class="rm-header rm-large">
+			<div class="rm-settings-bg rm-medium"></div>
+			<div class="rm-container-header">
+				<div class="rm-container-settings rm-normal">
+					<div class="rm-language-corner rm-right">
+						<input type="checkbox" class="rm-language-input">
+						<span class="rm-language">
+							<span id="lang-fr" class="rm-language-selection rm-language-fr" onclick="changeLanguage()">
+								<img id="flag-fr" class="rm-flag-lang" src="img/flag_fr.png" alt="FR">
+								</span><!-- suppr space
+								--><span id="lang-en" class="rm-language-selection rm-language-en" onclick="changeLanguage()">
+									<img id="flag-en" class="rm-flag-lang" src="img/flag_en.png" alt="EN">
+								</span>
+								<span class="rm-language-highlight"></span>
+							</span>
+						</div>
+						<div class="rm-language-corner rm-left">
+							<button id="btn-theme" class="rm-button-setting" onclick="changeTheme()"><i class="fa fa-adjust rm-btn-icon-left"></i><span id="btn-theme-label"></span></button>
+						</div>
+					</div>
+				<div class="rm-row">
+					<!-- PROFILE -->
+					<div class="profile-upper">
+						<div class="profile-cover-image">
+							<img src="img/cover.jpg" alt="Banner image" class="rm-image-center">
+						</div>
+						<div class="profile-details">
+							<div class="profile-pic">
+								<img src="img/profile.jpg">    
+							</div>
+							<div class="profile-name">Jules VUILLAUME</div>
+						</div>
+						<div id="black-grd"></div>
+					</div>
+					<br><br>
+					<!-- End PROFILE -->
+					<!-- STICKY NAVBAR -->
+					<div class="rm-container-nav rm-normal">
+						<hr class="hr-menu">
+						<div class="nav-width">
+							<div class="nav" id="stickyNavBar">
+								<div class="logo rm-xlarge" id="logo"><strong><span data-i18n="nav.title"></span></strong></div>
+								<div class="logo logo-img rm-hide" id="logo-img"><img src="img/profile.jpg" alt="Avatar" class="rm-left rm-circle"></div>
+								<div class="logo-text rm-hide" id="logo-img-text">Jules VUILLAUME</div>
+								<input class="menu-btn" type="checkbox" id="menu-btn" />
+								<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+								<ul class="menu">
+									<li><a id="contact-menu" class="menu-link" onclick="openMenuLink(this)"><i class="fa fa-comment rm-btn-icon-left"></i><span data-i18n="nav.link.message"></span></a></li>
+
+                                    
+									<li><a id="linkedin-menu" class="menu-link" onclick="openMenuLink(this)"><i class="fab fa-linkedin rm-btn-icon-left"></i><span data-i18n="nav.link.linkedin"></span></a></li>
+									<li>
+                                        <a id="cv-menu" class="menu-link menu-link-last" href="assets/CV Jules VUILLAUME.pdf" download>
+                                          <i class="fa fa-download rm-btn-icon-left"></i>
+                                          <span data-i18n="nav.link.resume">Télécharger le CV</span>
+                                        </a>
+                                      </li>
+                                      
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- End STICKY NAVBAR -->
+				</div>
+			</div>
+		</div>
+		<!-- End HEADER -->
+		<!-- PAGE CONTAINER -->
+		<div class="rm-container-page">
+			<div class="rm-row">
+				<!-- LEFT COLUMN -->
+				<div class="rm-col m4">
+					<!-- INTRO -->
+					<div class="rm-container-card">
+						<h3 data-i18n="intro.title"></h3>
+						<p><i class="fa fa-graduation-cap fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="intro.graduation"></span></p>
+						<p><i class="fa fa-home fa-fw rm-margin-right rm-text-bullet-color"></i><b>Strasbourg, FR</b></p>
+						<p><i class="fa fa-birthday-cake fa-fw rm-margin-right rm-text-bullet-color"></i><span id="my-age"></span> <span data-i18n="intro.age"></span></p>
+					</div>
+					<!-- End INTRO -->
+					<!-- SCHOOL TRAINING -->
+					<div class="rm-container-card">
+						<h3 data-i18n="formation.title"></h3>
+						<p><i class="fa fa-graduation-cap fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="formation.graduation2"></span><br>
+							<span class="rm-tag rm-small tag-style-01" data-i18n="tag.sio"></span>
+							<span class="rm-tag rm-small tag-style-02">René Cassin (Strasbourg, FR)</span>
+							<span class="rm-tag rm-small tag-style-03">2024</span>
+						</p>
+						<p><i class="fa fa-graduation-cap fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="formation.graduation1"></span><br>
+							<span class="rm-tag rm-small tag-style-01" data-i18n="tag.sn"></span>
+							<span class="rm-tag rm-small tag-style-02">Lycée Louis Couffignal (Strasbourg, FR)</span>
+							<span class="rm-tag rm-small tag-style-02">2021</span>
+						</p>
+					</div>
+					<!-- End SCHOOL TRAINING -->
+					<!-- SKILLS -->
+					<div class="rm-container-card">
+						<h3 data-i18n="skills.title"></h3>
+						<p><i class="fa fa-code fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="skills.softwaredev"></span><br>
+							<span class="rm-tag rm-small tag-style-01">C#</span>
+							<span class="rm-tag rm-small tag-style-02">PYTHON</span>
+							<span class="rm-tag rm-small tag-style-02">JAVA</span>
+							<span class="rm-tag rm-small tag-style-04">BATCH</span>
+						</p>
+						<p><i class="fa fa-html5 fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="skills.webdev"></span><br>
+							<span class="rm-tag rm-small tag-style-01">HTML</span>
+							<span class="rm-tag rm-small tag-style-02">CSS</span>
+							<span class="rm-tag rm-small tag-style-03">JavaScript</span>
+							<span class="rm-tag rm-small tag-style-04">PHP</span>
+						</p>
+						<p><i class="fa fa-database fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="skills.data"></span><br>
+							<span class="rm-tag rm-small tag-style-01">XML</span>
+							<span class="rm-tag rm-small tag-style-02">CSV</span>
+							<span class="rm-tag rm-small tag-style-03">JSON</span>
+							<span class="rm-tag rm-small tag-style-04">SQL</span>
+						</p>
+						<p><i class="fa fa-desktop fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="skills.system"></span><br>
+							<span class="rm-tag rm-small tag-style-01">Windows</span>
+							<span class="rm-tag rm-small tag-style-02">Linux</span>
+							<span class="rm-tag rm-small tag-style-03">Mac</span>
+						</p>
+						<p><i class="fa fa-language fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="skills.language"></span><br>
+							<span class="rm-tag rm-small tag-style-01" data-i18n="tag.french"></span>
+							<span class="rm-tag rm-small tag-style-02"><span data-i18n="tag.english"></span> (B1)</span>
+						</p>
+					</div>
+					<!-- End SKILLS -->
+					<!-- Quality -->
+					<div class="rm-container-card">
+						<h3 data-i18n="quality.title"></h3>
+						<p><i class="fa fa-greater-than fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="quality.01"></span><br>
+						</p>
+						<p><i class="fa fa-greater-than fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="quality.02"></span><br>
+						</p>
+						<p><i class="fa fa-greater-than fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="quality.03"></span><br>
+						</p>
+						<p><i class="fa fa-greater-than fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="quality.04"></span><br>
+						</p>
+						<p><i class="fa fa-greater-than fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="quality.05"></span><br>
+						</p>
+						<p><i class="fa fa-greater-than fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="quality.06"></span><br>
+						</p>
+						<p><i class="fa fa-greater-than fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="quality.07"></span><br>
+						</p>
+						<p><i class="fa fa-greater-than fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="quality.08"></span><br>
+						</p>
+					</div>					 
+					<!-- End Quality -->
+					<!-- HOBBIES -->
+					<div class="rm-container-card">
+						<h3 data-i18n="hobbies.title"></h3>
+						<p><i class="fa fa-motorcycle fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="hobbies.moto"></span><br>
+							<span class="rm-tag rm-small tag-style-01" data-i18n="tag.gp"></span>
+							<span class="rm-tag rm-small tag-style-02" data-i18n="tag.driving"></span>
+							<span class="rm-tag rm-small tag-style-03" data-i18n="tag.equipement"></span>
+							<span class="rm-tag rm-small tag-style-04" data-i18n="tag.sport"></span>
+						</p>
+						<p><i class="fa fa-solid fa-shield fa-fw rm-margin-right rm-text-bullet-color"></i><span data-i18n="hobbies.hacking"></span><br>
+							<span class="rm-tag rm-small tag-style-01" data-i18n="tag.tryhackme"></span>
+							<span class="rm-tag rm-small tag-style-02" data-i18n="tag.rootme"></span>
+						</p>
+					</div>
+					<!-- End HOBBIES -->
+				</div>
+				<!-- End LEFT COLUMN -->
+				<!-- MIDDLE/RIGHT COLUMN -->
+				<div class="rm-col m8">
+					<div class="rm-container-card rm-justify">
+						<div class="rm-card-header">
+							<div class="rm-card-header-img">
+								<img src="img/profile.jpg" alt="Avatar" class="rm-card-img">
+							</div>
+							<div class="rm-card-header-info">
+								<div class="rm-card-header-1 rm-nolink">Jules VUILLAUME</div>
+								<div class="rm-card-header-2">
+									<span data-i18n="post.header.datenow"></span> • <i class="fa fa-globe-americas rm-text-bullet-color rm-medium"></i>
+								</div>
+							</div>
+						</div>
+						<p><span data-i18n="post.welcome.welcome"></span>,</p>
+						<p data-i18n="post.welcome.details"></p>
+						<button type="button" class="rm-button rm-margin-bottom" id="contact-post" onclick="openContactModal()"><i class="fa fa-comment rm-btn-icon-left"></i><span data-i18n="post.link.message"></span></button>
+					</div>
+					
+					<div class="rm-container-card rm-justify">
+						<div class="rm-card-header">
+							<div class="rm-card-header-img">
+								<img src="img/Picard_surgelés.png" alt="OVSG" class="rm-card-img">
+							</div>
+							<div class="rm-card-header-info">
+								<div class="rm-card-header-1 rm-card-header-job"><a href="https://www.picard.fr/" target="_blank">PICARD</a></div>
+								<div class="rm-card-header-2"><span data-i18n="post.month.jan"></span> 2025 <span data-i18n="post.header.dateto"></span> aujourd'hui • <i class="fa fa-globe-americas rm-text-bullet-color rm-medium"></i></div>
+								<div class="rm-card-header-3"><i class="fa fa-map-marker-alt rm-text-bullet-color rm-small"></i> Strasbourg, FR</div>
+							</div>
+						</div>
+						<p data-i18n="post.professions.PICARD"></p>
+						<hr class="rm-clear-1">
+						<p class="rm-tags">
+							<span class="rm-tag rm-small tag-style-01" data-i18n="tag.professions"></s>
+						</p>
+					</div>
+
+					<div class="rm-container-card rm-justify">
+						<div class="rm-card-header">
+							<div class="rm-card-header-img">
+								<img src="img/ovsg.png" alt="OVSG" class="rm-card-img">
+							</div>
+							<div class="rm-card-header-info">
+								<div class="rm-card-header-1 rm-card-header-job"><a href="https://ovsg.eu/" target="_blank">OVSG</a></div>
+								<div class="rm-card-header-2"><span data-i18n="post.month.jun"></span> 2025 <span data-i18n="post.header.dateto"></span> <span data-i18n="post.month.jul"></span> 2025 • <i class="fa fa-globe-americas rm-text-bullet-color rm-medium"></i></div>
+								<div class="rm-card-header-3"><i class="fa fa-map-marker-alt rm-text-bullet-color rm-small"></i> Paris, FR</div>
+							</div>
+						</div>
+						<p data-i18n="post.stage.ovsg3"></p>
+						<hr class="rm-clear-1">
+						<p class="rm-tags">
+							<span class="rm-tag rm-small tag-style-01" data-i18n="tag.internship"></s>
+						</p>
+					</div>
+
+					<div class="rm-container-card rm-justify">
+						<div class="rm-card-header">
+							<div class="rm-card-header-img">
+								<img src="img/ovsg.png" alt="OVSG" class="rm-card-img">
+							</div>
+							<div class="rm-card-header-info">
+								<div class="rm-card-header-1 rm-card-header-job"><a href="https://ovsg.eu/" target="_blank">OVSG</a></div>
+								<div class="rm-card-header-2"><span data-i18n="post.month.mar"></span> 2024 <span data-i18n="post.header.dateto"></span> <span data-i18n="post.month.apr"></span> 2024 • <i class="fa fa-globe-americas rm-text-bullet-color rm-medium"></i></div>
+								<div class="rm-card-header-3"><i class="fa fa-map-marker-alt rm-text-bullet-color rm-small"></i> Paris, FR</div>
+							</div>
+						</div>
+						<p data-i18n="post.stage.ovsg2"></p>
+						<hr class="rm-clear-1">
+						<p class="rm-tags">
+							<span class="rm-tag rm-small tag-style-01" data-i18n="tag.internship"></s>
+						</p>
+					</div>
+
+					<div class="rm-container-card rm-justify">
+						<div class="rm-card-header">
+							<div class="rm-card-header-img">
+								<img src="img/logo-sunny-shark-web.png" alt="Sunny Shark" class="rm-card-img">
+							</div>
+							<div class="rm-card-header-info">
+								<div class="rm-card-header-1 rm-card-header-job"><a href="https://sunnyshark.com/en/" target="_blank">Sunny Shark</a></div>
+								<div class="rm-card-header-2"><span data-i18n="post.month.sep"></span> 2023 <span data-i18n="post.header.dateto"></span> <span data-i18n="post.month.oct"></span> 2023 • <i class="fa fa-globe-americas rm-text-bullet-color rm-medium"></i></div>
+								<div class="rm-card-header-3"><i class="fa fa-map-marker-alt rm-text-bullet-color rm-small"></i> Strasbourg, FR</div>
+							</div>
+						</div>
+						<p data-i18n="post.stage.sunnyshark2"></p>
+						<hr class="rm-clear-1">
+						<p class="rm-tags">
+							<span class="rm-tag rm-small tag-style-01" data-i18n="tag.internship"></s>
+						</p>
+					</div>
+
+					<div class="rm-container-card rm-justify">
+						<div class="rm-card-header">
+							<div class="rm-card-header-img">
+								<img src="img/logo-sunny-shark-web.png" alt="Sunny Shark" class="rm-card-img">
+							</div>
+							<div class="rm-card-header-info">
+								<div class="rm-card-header-1 rm-card-header-job"><a href="https://sunnyshark.com/en/" target="_blank">Sunny Shark</a></div>
+								<div class="rm-card-header-2"><span data-i18n="post.month.jun"></span> 2023 <span data-i18n="post.header.dateto"></span> <span data-i18n="post.month.jul"></span> 2023 • <i class="fa fa-globe-americas rm-text-bullet-color rm-medium"></i></div>
+								<div class="rm-card-header-3"><i class="fa fa-map-marker-alt rm-text-bullet-color rm-small"></i> Strasbourg, FR</div>
+							</div>
+						</div>
+						<p data-i18n="post.stage.sunnyshark1"></p>
+						<hr class="rm-clear-1">
+						<p class="rm-tags">
+							<span class="rm-tag rm-small tag-style-01" data-i18n="tag.internship"></s>
+						</p>
+					</div>
+
+					<div class="rm-container-card rm-justify">
+						<div class="rm-card-header">
+							<div class="rm-card-header-img">
+								<img src="img/mtc.webp" alt="Maintronic" class="rm-card-img">
+							</div>
+							<div class="rm-card-header-info">
+								<div class="rm-card-header-1 rm-card-header-job"><a href="https://www.maintronic.fr/" target="_blank">Maintronic</a></div>
+								<div class="rm-card-header-2"><span data-i18n="post.month.nov"></span> 2022 <span data-i18n="post.header.dateto"></span> <span data-i18n="post.month.dec"></span> 2022 • <i class="fa fa-globe-americas rm-text-bullet-color rm-medium"></i></div>
+								<div class="rm-card-header-3"><i class="fa fa-map-marker-alt rm-text-bullet-color rm-small"></i> Strasbourg, FR</div>
+							</div>
+						</div>
+						<p data-i18n="post.stage.mtc"></p>
+						<hr class="rm-clear-1">
+						<p class="rm-tags">
+							<span class="rm-tag rm-small tag-style-01" data-i18n="tag.internship"></s>
+						</p>
+					</div>
+
+					<div class="rm-container-card rm-justify">
+						<div class="rm-card-header">
+							<div class="rm-card-header-img">
+								<img src="img/ovsg.png" alt="OVSG" class="rm-card-img">
+							</div>
+							<div class="rm-card-header-info">
+								<div class="rm-card-header-1 rm-card-header-job"><a href="https://ovsg.eu/" target="_blank">OVSG</a></div>
+								<div class="rm-card-header-2"><span data-i18n="post.month.jun"></span> 2022 <span data-i18n="post.header.dateto"></span> <span data-i18n="post.month.jul"></span> 2022 • <i class="fa fa-globe-americas rm-text-bullet-color rm-medium"></i></div>
+								<div class="rm-card-header-3"><i class="fa fa-map-marker-alt rm-text-bullet-color rm-small"></i> Paris, FR</div>
+							</div>
+						</div>
+						<p data-i18n="post.stage.ovsg1"></p>
+						<hr class="rm-clear-1">
+						<p class="rm-tags">
+							<span class="rm-tag rm-small tag-style-01" data-i18n="tag.internship"></s>
+						</p>
+					</div>
+
+					<div class="rm-container-card rm-justify">
+						<div class="rm-card-header">
+							<div class="rm-card-header-img">
+								<img src="img/ASTI.webp" alt="ASTI SNCF" class="rm-card-img">
+							</div>
+							<div class="rm-card-header-info">
+								<div class="rm-card-header-1 rm-card-header-job"><a href="https://emploi.sncf.com/nos-metiers/telecoms" target="_blank">ASTI</a></div>
+								<div class="rm-card-header-2"><span data-i18n="post.month.nov"></span> 2021 <span data-i18n="post.header.dateto"></span> <span data-i18n="post.month.dec"></span> 2021 • <i class="fa fa-globe-americas rm-text-bullet-color rm-medium"></i></div>
+								<div class="rm-card-header-3"><i class="fa fa-map-marker-alt rm-text-bullet-color rm-small"></i> Strasbourg, FR</div>
+							</div>
+						</div>
+						<p data-i18n="post.stage.asti"></p>
+						<hr class="rm-clear-1">
+						<p class="rm-tags">
+							<span class="rm-tag rm-small tag-style-01" data-i18n="tag.internship"></s>
+						</p>
+					</div>
+
+					
+				
+					<!-- <div class="rm-container-card rm-justify">
+						<div class="rm-card-header">
+							<div class="rm-card-header-img">
+								<img src="img/profile.jpg" alt="Avatar" class="rm-card-img">
+							</div>
+							<div class="rm-card-header-info">
+								<div class="rm-card-header-1 rm-nolink">Jules VUILLAUME</div>
+								<div class="rm-card-header-2">
+									<span>2024</span> • <i class="fa fa-globe-americas rm-text-bullet-color rm-medium"></i>
+								</div>
+							</div>
+						</div>
+						<p class="rm-center"><i class="fa fa-graduation-cap rm-xxxlarge"></i></p>
+						<p class="rm-center"><strong><span data-i18n="post.diploma.graduation1"></span></strong><br>Lycée Louis Couffignal, Strasbourg, FR</p>
+					</div>
+				</div> -->
+				<!-- End MIDDLE/RIGHT COLUMN -->
+			</div>
+			<!-- FLOATING BUTTONS -->
+			<a id="contact-floating-btn" class="rm-floating-btn floating-contact" onclick="openContactModal()">
+				<div class="rm-floating-btn-icon floating-icon-contact"><i class="fa fa-edit rm-xlarge floating-icon"></i></div>
+				<div class="rm-floating-btn-label floating-label-contact" data-i18n="nav.floatingbtn.message"></div>
+			</a>	
+			<!-- End FLOATING BUTTONS -->
+			<!-- CONTACT -->
+			<div id="contact-modal" class="contact-modal">
+				<div class="contact-modal-content">
+					<div class="contact-modal-header">
+						<div class="contact-modal-title">
+							<div class="modal-title" data-i18n="contact.header.title"></div>
+							<div class="modal-close" id="contact-modal-close"><i class="fa fa-times rm-large"></i></div>
+						</div>
+						<div class="contact-modal-subtitle">
+							<span class="rm-margin-right" data-i18n="contact.header.messageto"></span>Jules VUILLAUME
+						</div>
+					</div>
+					<hr>
+					<form method="post" name="contact" id="form_contact" action="assets/php/contact.php" onsubmit="return controlForm()">
+						<div class="contact-modal-form">
+							<!-- NE PAS REMPLIR -->
+							<div class="rm-row row-margin rm-col-h h5 rm-form-remark">
+								<div class="rm-col m3 s12 rm-col-h h0">
+									<label class="rm-label" for="fremark" data-i18n="contact.field.remark"></label>
+								</div>
+								<div class="rm-col m9 s12  rm-col-h h12">
+									<div class="input-control">
+										<input class="modal-input input-control-field" type="text" id="fremark" name="remark" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="nom@domaine.com"/>
+										<span class="input-control-icon input-none" id="fremark-icon"></span>
+									</div>
+								</div>
+							</div>
+							<!-- End NE PAS REMPLIR -->
+							<div class="rm-row row-margin rm-col-h h5">
+								<div class="rm-col m3 s12 rm-col-h h0">
+									<label class="rm-label" for="fname" data-i18n="contact.field.name"></label>
+								</div>
+								<div class="rm-col m9 s12  rm-col-h h12">
+									<div class="input-control">
+										<input class="modal-input input-control-field" type="text" id="fname" name="name" oninput="controlField(this, 'text')" data-i18n-placeholder="contact.placeholder.name"/>
+										<span class="input-control-icon input-none" id="fname-icon"></span>
+									</div>
+								</div>
+							</div>
+							<div class="rm-row row-margin rm-col-h h7">
+								<div class="rm-col m3  rm-col-h h0">
+									<label class="rm-label" for="femail" data-i18n="contact.field.email"></label>
+								</div>
+								<div class="rm-col m9 rm-col-h h12">
+									<div class="input-control">
+										<input class="modal-input input-control-field" type="text" id="femail" name="email" oninput="controlField(this,'email')" data-i18n-placeholder="contact.placeholder.email"/>
+										<span class="input-control-icon input-none" id="femail-icon"></span>
+									</div>
+								</div>
+							</div>
+							<div class="rm-row row-margin">
+								<div class="rm-col m3 rm-col-h h0">
+									<label class="rm-label" for="fsubject" data-i18n="contact.field.subject"></label>
+								</div>
+								<div class="rm-col m9 rm-col-h h12">
+									<div class="input-control">
+										<input class="modal-input input-control-field" type="text" id="fsubject" name="subject" oninput="controlField(this,'text')" data-i18n-placeholder="contact.placeholder.subject"/>
+										<span class="input-control-icon input-none" id="fsubject-icon"></span>
+									</div>
+								</div>
+							</div>
+							<div class="rm-row row-margin">
+								<div class="rm-col m3 rm-col-h h0">
+									<label class="rm-label" for="fmessage" data-i18n="contact.field.message"></label>
+								</div>
+								<div class="rm-col m9  rm-col-h h12">
+									<div class="input-control">
+										<textarea class="modal-input rm-textarea input-control-field" type="text" id="fmessage" oninput="controlField(this,'text')" name="message" data-i18n-placeholder="contact.placeholder.message"></textarea>
+										<span class="input-control-icon input-none" id="fmessage-icon"></span>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="rm-row row-margin-btn">
+								<div class="rm-col s-2 s8 m-3 m6 l-4 l4">
+									<button class="rm-button" onclick="controlForm()"><i class="fa fa-paper-plane rm-btn-icon-left"></i><span data-i18n="contact.link.send"></button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- End CONTACT -->
+		</div>
+		<!-- End PAGE CONTAINER -->
+		<br>
+		<!-- FOOTER -->
+		<footer class="rm-container-footer">
+			<p class="rm-right rm-medium">De Jules VUILLAUME</p>
+		</footer> -->
+		<!-- End FOOTER -->
+		<script  src="assets/js/jquery.js"></script>
+		<script  src="assets/js/nav.js"></script>
+		<script  src="assets/js/i18n.js"></script>
+		<script  src="assets/js/script.js"></script>
+		<script  src="assets/js/contact.js"></script>
+	</body>
+</html>

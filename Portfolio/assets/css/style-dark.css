@@ -1,0 +1,230 @@
+body {
+	color: #e4e6eb !important;
+	background-color: #18191a !important;
+}
+
+
+/* DEBUT Texte */
+
+hr {
+	border-top: 1px solid #3e4042;
+}
+
+/* FIN Texte */
+
+
+.rm-link-no-deco{
+	color: #fff;
+}
+
+.rm-button {
+	color: #e4e6eb !important;
+	background-color: #3a3b3c !important;
+}
+
+.rm-button:hover {
+	color: #fff!important;
+	background-color: #4e4f50!important
+}
+
+.tag-style-01, .tag-style-02,
+.tag-style-03, .tag-style-04,
+.tag-style-05, .tag-style-06,
+.tag-style-07, .tag-style-08,
+.tag-style-09, .tag-style-10 { color: #fff !important; }
+.tag-style-01 { background-color: #373737 !important }
+.tag-style-02 { background-color: #434343 !important }
+.tag-style-03 { background-color: #505050 !important }
+.tag-style-04 { background-color: #5F5F5F !important }
+.tag-style-05 { background-color: #6E6E6E !important }
+.tag-style-06 { background-color: #5A5A5A !important }
+.tag-style-07 { background-color: #696969 !important }
+.tag-style-08 { background-color: #787878 !important }
+.tag-style-09 { background-color: #878787 !important }
+.tag-style-10 { background-color: #969696 !important }
+
+.rm-text-bullet-color {
+	color: #8C949C !important
+}
+
+
+
+.rm-header{
+	background: #242526;
+	background: -moz-linear-gradient(180deg, rgba(56,57,58,1) 0%, rgba(36,37,38,1) 35%, rgba(36,37,38,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(56,57,58,1) 0%, rgba(36,37,38,1) 35%, rgba(36,37,38,1) 100%);
+	background: linear-gradient(180deg, rgba(56,57,58,1) 0%, rgba(36,37,38,1) 35%, rgba(36,37,38,1) 100%);
+}
+
+.rm-container-card {
+	color: #e4e6eb!important;
+	background-color: #242526!important;
+}
+
+.rm-container-footer {
+	color: #e4e6eb!important;
+	background-color: #242526!important
+}
+
+
+/* DEBUT Entête profil */
+
+.profile-details
+{
+    padding-top: 12px;
+}
+
+.profile-cover-image img
+{
+    width: 101%;
+    margin-top: -20%;
+}
+
+.profile-pic
+{
+	box-shadow: 0 0 0 3px #242526;	
+}
+
+/* FIN Entête profil */
+
+
+/* DEBUT Card Header */
+
+.rm-card-header-2 {
+	opacity: 0.60;
+}
+.rm-card-header-3 {
+	opacity: 0.60;
+}
+
+/* FIN Card Header */
+
+
+/* DEBUT Bouton flottant */
+
+.rm-floating-btn-icon {
+	background-color:#4b4c4f;
+	box-shadow: 5px 5px 1em #242526;
+}
+.rm-floating-btn-icon:hover { background-color:#5d5e61; }
+.rm-floating-btn-label {
+    color:#000;
+    background-color:#fff;
+}
+
+/* FIN Bouton flottant */
+
+
+/* DEBUT Contact modal */
+
+.contact-modal-content {
+	color: #e4e6eb!important;
+	background-color: #242526!important;
+}
+.modal-close:hover,
+.modal-close:focus {
+	color: #fff;
+}
+.modal-input {
+	box-shadow: 5px 5px 5em #242526;
+	background-color: #3a3b3c;
+	border: solid 2px #3a3b3c;
+	color: #e4e6eb;
+}
+
+.modal-input:focus {
+	background-color: #4e4f50;
+	border: solid 2px #4e4f50;
+}
+
+/* FIN Contact modal */
+
+
+/* DEBUT Menu & Sticky Header */
+
+.menu-link:hover {
+	color: #fff!important;
+	background-color: #4e4f50!important;
+}
+
+.sticky-sizing {
+	background-color: #242526!important;
+	box-shadow:0px 0px 8px #000;
+}
+
+.nav {
+	background-color: #242526!important;
+}
+
+.nav .menu-icon .navicon {
+  background: #e4e6eb;
+}
+
+.nav .menu-icon .navicon:before,
+.nav .menu-icon .navicon:after {
+  background: #e4e6eb;
+}
+
+@media (min-width:701px) {  
+    .menu-link {
+		color: #e4e6eb!important;
+		background-color: #3a3b3c!important;
+	}
+
+	.menu-link:hover {
+		color: #fff!important;
+		background-color: #4e4f50!important
+	}
+}
+
+/* FIN Menu & Sticky Header */
+
+
+
+
+/* DEBUT Settings bar */
+
+.rm-settings-bg {
+	background-color: #242526!important;
+	border-bottom: 1px solid #3e4042!important;
+	box-shadow:0px 0px 8px #000!important;
+}
+
+/* FIN Settings bar */
+
+
+/* DEBUT Language switch */
+
+.rm-language-corner {
+	background-color: #3a3b3c;
+}
+
+.rm-language {
+	color: #3a3b3c;
+}
+
+.rm-language-highlight {
+	background: #4e4f50;
+	border: 1px solid #626364!important;
+}
+
+.rm-language-selection_active {
+	color: #fff;
+}
+
+/* FIN Language switch */
+
+
+/* DEBUT Theme switch */
+
+.rm-button-setting {
+	color: #e4e6eb !important;
+	background-color: #3a3b3c !important;
+}
+
+.rm-button-setting:hover {
+	color: #fff!important;
+	background-color: #4e4f50!important
+}
+
+/* FIN Theme switch */
