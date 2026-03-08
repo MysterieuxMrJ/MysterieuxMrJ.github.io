@@ -453,6 +453,10 @@ var translations  = {
 			"ovsg3": {
 				"fr": "J’ai développé une extension Excel en C# permettant de se connecter à leur base de données. J’ai également travaillé sur JD Edwards en no-code afin de créer plus facilement de nouveaux clients pour l’entreprise.",
 				"en": "I developed an Excel add-in in C# that connects to their database. I also worked with JD Edwards using no-code tools to streamline the creation of new clients for the company."
+			},
+			"ovsg4": {
+				"fr": "Durant ce stage, j’ai développé plusieurs projets pour l’entreprise. J’ai notamment réalisé un site internet pour un client, afin de répondre à ses besoins et d’améliorer sa présence en ligne. J’ai également développé un programme permettant de convertir des fichiers Excel en format JSON, afin de faciliter l’exploitation et l’intégration des données dans différents systèmes informatiques. Enfin, j’ai participé à la création d’un coffre-fort numérique pour l’entreprise, permettant de stocker et de sécuriser des informations sensibles de manière centralisée et protégée.",
+				"en": "During this internship, I worked on several projects for the company. I notably developed a website for one of the company's clients in order to meet their needs and improve their online presence. I also created a program that converts Excel files into JSON format, making it easier to process and integrate data into different information systems. Finally, I contributed to the development of a digital vault for the company, designed to securely store sensitive information in a centralized and protected environment."
 			}
 
 		}
