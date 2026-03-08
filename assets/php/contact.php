@@ -6,15 +6,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = filter_var(trim($_POST["message"]), FILTER_SANITIZE_STRING);
 
     if ($name && $email && $subject && $message) {
-        $to = "julesv1411@gmail.com"; // Remplacez par votre adresse
+        $to = "julesv1411@gmail.com";
         $email_subject = "Nouveau message de: $name - $subject";
         $email_body = "Nom: $name\nEmail: $email\n\nMessage:\n$message";
         $headers = "From: $email";
 
         if (mail($to, $email_subject, $email_body, $headers)) {
-            echo "true"; // Indique succès au JavaScript
+            echo "true"; // Indique succès
         } else {
-            echo "false"; // Indique échec au JavaScript
+            echo "false"; // Indique échec
         }
     } else {
         echo "invalid"; // Indique erreur de validation
@@ -23,3 +23,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "robot"; // Si l'accès n'est pas via POST
 }
 ?>
+
