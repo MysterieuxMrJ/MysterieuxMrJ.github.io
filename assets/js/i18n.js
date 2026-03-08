@@ -271,6 +271,10 @@ var translations  = {
 		"hacking": {
 			"fr": "hacking",
 			"en": "hacking"
+		},
+		"trading":{
+			"fr": "trading",
+			"en": "trading"
 		}
 	},
 	"contact": {
@@ -486,6 +490,30 @@ var translations  = {
 		"sport": {
 			"fr": "Motos Sportives",
 			"en": "Motos Sportives"
+		},
+		"gold": {
+			"fr": "GOLD (XAUUSD)",
+			"en": "GOLD (XAUUSD)"
+		},
+		"silver": {
+			"fr": "Silver (XAGUSD)",
+			"en": "Silver (XAGUSD)"
+		},
+		"btc": {
+			"fr": "bitcoin (BTC)",
+			"en": "bitcoin (BTC)"
+		},
+		"eurusd": {
+			"fr": "eurusd",
+			"en": "eurusd"
+		},
+		"nasdaq": {
+			"fr": "nasdaq (NDX)",
+			"en": "nasdaq (NDX)"
+		},
+		"dax": {
+			"fr": "DAX",
+			"en": "DAX"
 		},
 		"tryhackme": {
 			"fr": "TryHackMe",
